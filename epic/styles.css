@@ -1,0 +1,653 @@
+.container{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows:  200px 200px 200px;
+    gap: 20px;
+    justify-content: center;
+    grid-template-areas: 
+    "claro medio medio"
+    "oscuro oscuro claro1"
+    "medio1 claro3 oscuro1";
+}
+
+.item{
+    color: black;
+    border: 1px solid black;
+}
+
+.verde{
+    background-color: rgb(41, 245, 0);
+}
+
+.verdecito{
+    background-color: rgb(47, 128, 0);
+}
+
+.verdesote{
+    background-color: rgb(3, 48, 3);
+}
+
+.uno{
+    grid-area: claro;
+    background-image: url();
+}
+
+.dos{
+    grid-area: medio;
+}
+
+.tres{
+    grid-area: medio;
+}
+
+.cuatro{
+    grid-area: oscuro;
+}
+
+.cinco{
+    grid-area: oscuro;
+}
+
+.seis{
+    grid-area: claro1;
+}
+
+.siete{
+    grid-area: medio1;
+}
+
+.ocho{
+    grid-area: claro3;
+}
+
+.nueve{
+    grid-area: oscuro1;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CONTENEDOR GENERAL */
+.galeria-3d {
+    width: 100%;
+    height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    margin-top: 4rem;
+}
+
+/* ESCONDER RADIOS */
+input[type="radio"] {
+    display: none;
+}
+
+/* CONTENEDOR DE CARDS */
+.otra-tarjeta {
+    position: relative;
+
+    width: 320px;
+    height: 420px;
+
+    perspective: 1000px;
+}
+
+/* CARD */
+.card {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    left: 0;
+    top: 0;
+
+    border-radius: 1.5rem;
+    overflow: hidden;
+
+    cursor: pointer;
+
+    transition:
+    transform 0.5s ease,
+    opacity 0.5s ease,
+    filter 0.5s ease;
+
+    opacity: 0;
+}
+
+/* IMAGEN */
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ================================================= */
+/* ITEM 1 */
+/* ================================================= */
+
+#item-1:checked ~ .otra-tarjeta #obra-1 {
+    transform: translateX(0%) scale(1);
+    opacity: 1;
+    z-index: 9;
+}
+
+#item-1:checked ~ .otra-tarjeta #obra-2 {
+    transform: translateX(55%) scale(0.9);
+    opacity: 0.9;
+    z-index: 8;
+}
+
+#item-1:checked ~ .otra-tarjeta #obra-3 {
+    transform: translateX(110%) scale(0.8);
+    opacity: 0.7;
+    z-index: 7;
+}
+
+#item-1:checked ~ .otra-tarjeta #obra-4 {
+    transform: translateX(165%) scale(0.7);
+    opacity: 0.5;
+    z-index: 6;
+}
+
+#item-1:checked ~ .otra-tarjeta #obra-5 {
+    transform: translateX(220%) scale(0.6);
+    opacity: 0;
+    z-index: 5;
+}
+
+#item-1:checked ~ .otra-tarjeta #obra-6 {
+    transform: translateX(-220%) scale(0.6);
+    opacity: 0;
+    z-index: 5;
+}
+
+#item-1:checked ~ .otra-tarjeta #obra-7 {
+    transform: translateX(-165%) scale(0.7);
+    opacity: 0.5;
+    z-index: 6;
+}
+
+#item-1:checked ~ .otra-tarjeta #obra-8 {
+    transform: translateX(-110%) scale(0.8);
+    opacity: 0.7;
+    z-index: 7;
+}
+
+#item-1:checked ~ .otra-tarjeta #obra-9 {
+    transform: translateX(-55%) scale(0.9);
+    opacity: 0.9;
+    z-index: 8;
+}
+
+/* ================================================= */
+/* ITEM 2 */
+/* ================================================= */
+
+#item-2:checked ~ .otra-tarjeta #obra-1 {
+    transform: translateX(-55%) scale(0.9);
+    opacity: 0.9;
+    z-index: 8;
+}
+
+#item-2:checked ~ .otra-tarjeta #obra-2 {
+    transform: translateX(0%) scale(1);
+    opacity: 1;
+    z-index: 9;
+}
+
+#item-2:checked ~ .otra-tarjeta #obra-3 {
+    transform: translateX(55%) scale(0.9);
+    opacity: 0.9;
+    z-index: 8;
+}
+
+#item-2:checked ~ .otra-tarjeta #obra-4 {
+    transform: translateX(110%) scale(0.8);
+    opacity: 0.7;
+    z-index: 7;
+}
+
+#item-2:checked ~ .otra-tarjeta #obra-5 {
+    transform: translateX(165%) scale(0.7);
+    opacity: 0.5;
+    z-index: 6;
+}
+
+#item-2:checked ~ .otra-tarjeta #obra-6 {
+    transform: translateX(220%) scale(0.6);
+    opacity: 0;
+    z-index: 5;
+}
+
+#item-2:checked ~ .otra-tarjeta #obra-7 {
+    transform: translateX(-220%) scale(0.6);
+    opacity: 0;
+    z-index: 5;
+}
+
+#item-2:checked ~ .otra-tarjeta #obra-8 {
+    transform: translateX(-165%) scale(0.7);
+    opacity: 0.5;
+    z-index: 6;
+}
+
+#item-2:checked ~ .otra-tarjeta #obra-9 {
+    transform: translateX(-110%) scale(0.8);
+    opacity: 0.7;
+    z-index: 7;
+}
+
+/* ================================================= */
+/* ITEM 3 */
+/* ================================================= */
+
+#item-3:checked ~ .otra-tarjeta #obra-1 {
+    transform: translateX(-110%) scale(0.8);
+    opacity: 0.7;
+    z-index: 7;
+}
+
+#item-3:checked ~ .otra-tarjeta #obra-2 {
+    transform: translateX(-55%) scale(0.9);
+    opacity: 0.9;
+    z-index: 8;
+}
+
+#item-3:checked ~ .otra-tarjeta #obra-3 {
+    transform: translateX(0%) scale(1);
+    opacity: 1;
+    z-index: 9;
+}
+
+#item-3:checked ~ .otra-tarjeta #obra-4 {
+    transform: translateX(55%) scale(0.9);
+    opacity: 0.9;
+    z-index: 8;
+}
+
+#item-3:checked ~ .otra-tarjeta #obra-5 {
+    transform: translateX(110%) scale(0.8);
+    opacity: 0.7;
+    z-index: 7;
+}
+
+#item-3:checked ~ .otra-tarjeta #obra-6 {
+    transform: translateX(165%) scale(0.7);
+    opacity: 0.5;
+    z-index: 6;
+}
+
+#item-3:checked ~ .otra-tarjeta #obra-7 {
+    transform: translateX(220%) scale(0.6);
+    opacity: 0;
+    z-index: 5;
+}
+
+#item-3:checked ~ .otra-tarjeta #obra-8 {
+    transform: translateX(-220%) scale(0.6);
+    opacity: 0;
+    z-index: 5;
+}
+
+#item-3:checked ~ .otra-tarjeta #obra-9 {
+    transform: translateX(-165%) scale(0.7);
+    opacity: 0.5;
+    z-index: 6;
+}
+
+/* ================================================= */
+/* ITEM 4 */
+/* ================================================= */
+
+#item-4:checked ~ .otra-tarjeta #obra-1 {
+    transform: translateX(-165%) scale(0.7);
+    opacity: 0.5;
+    z-index: 6;
+}
+
+#item-4:checked ~ .otra-tarjeta #obra-2 {
+    transform: translateX(-110%) scale(0.8);
+    opacity: 0.7;
+    z-index: 7;
+}
+
+#item-4:checked ~ .otra-tarjeta #obra-3 {
+    transform: translateX(-55%) scale(0.9);
+    opacity: 0.9;
+    z-index: 8;
+}
+
+#item-4:checked ~ .otra-tarjeta #obra-4 {
+    transform: translateX(0%) scale(1);
+    opacity: 1;
+    z-index: 9;
+}
+
+#item-4:checked ~ .otra-tarjeta #obra-5 {
+    transform: translateX(55%) scale(0.9);
+    opacity: 0.9;
+    z-index: 8;
+}
+
+#item-4:checked ~ .otra-tarjeta #obra-6 {
+    transform: translateX(110%) scale(0.8);
+    opacity: 0.7;
+    z-index: 7;
+}
+
+#item-4:checked ~ .otra-tarjeta #obra-7 {
+    transform: translateX(165%) scale(0.7);
+    opacity: 0.5;
+    z-index: 6;
+}
+
+#item-4:checked ~ .otra-tarjeta #obra-8 {
+    transform: translateX(220%) scale(0.6);
+    opacity: 0;
+    z-index: 5;
+}
+
+#item-4:checked ~ .otra-tarjeta #obra-9 {
+    transform: translateX(-220%) scale(0.6);
+    opacity: 0;
+    z-index: 5;
+}
+
+/* ================================================= */
+/* ITEM 5 */
+/* ================================================= */
+
+#item-5:checked ~ .otra-tarjeta #obra-1 {
+    transform: translateX(-220%) scale(0.6);
+    opacity: 0;
+    z-index: 5;
+}
+
+#item-5:checked ~ .otra-tarjeta #obra-2 {
+    transform: translateX(-165%) scale(0.7);
+    opacity: 0.5;
+    z-index: 6;
+}
+
+#item-5:checked ~ .otra-tarjeta #obra-3 {
+    transform: translateX(-110%) scale(0.8);
+    opacity: 0.7;
+    z-index: 7;
+}
+
+#item-5:checked ~ .otra-tarjeta #obra-4 {
+    transform: translateX(-55%) scale(0.9);
+    opacity: 0.9;
+    z-index: 8;
+}
+
+#item-5:checked ~ .otra-tarjeta #obra-5 {
+    transform: translateX(0%) scale(1);
+    opacity: 1;
+    z-index: 9;
+}
+
+#item-5:checked ~ .otra-tarjeta #obra-6 {
+    transform: translateX(55%) scale(0.9);
+    opacity: 0.9;
+    z-index: 8;
+}
+
+#item-5:checked ~ .otra-tarjeta #obra-7 {
+    transform: translateX(110%) scale(0.8);
+    opacity: 0.7;
+    z-index: 7;
+}
+
+#item-5:checked ~ .otra-tarjeta #obra-8 {
+    transform: translateX(165%) scale(0.7);
+    opacity: 0.5;
+    z-index: 6;
+}
+
+#item-5:checked ~ .otra-tarjeta #obra-9 {
+    transform: translateX(220%) scale(0.6);
+    opacity: 0;
+    z-index: 5;
+}
+
+/* ================================================= */
+/* ITEM 6 */
+/* ================================================= */
+
+#item-6:checked ~ .otra-tarjeta #obra-1 {
+    transform: translateX(220%) scale(0.7);
+    opacity: 0.5;
+    z-index: 6;
+}
+
+#item-6:checked ~ .otra-tarjeta #obra-2 {
+    transform: translateX(-220%) scale(0.6);
+    opacity: 0;
+    z-index: 5;
+}
+
+#item-6:checked ~ .otra-tarjeta #obra-3 {
+    transform: translateX(-165%) scale(0.7);
+    opacity: 0.5;
+    z-index: 6;
+}
+
+#item-6:checked ~ .otra-tarjeta #obra-4 {
+    transform: translateX(-110%) scale(0.8);
+    opacity: 0.7;
+    z-index: 7;
+}
+
+#item-6:checked ~ .otra-tarjeta #obra-5 {
+    transform: translateX(-55%) scale(0.9);
+    opacity: 0.9;
+    z-index: 8;
+}
+
+#item-6:checked ~ .otra-tarjeta #obra-6 {
+    transform: translateX(0%) scale(1);
+    opacity: 1;
+    z-index: 9;
+}
+
+#item-6:checked ~ .otra-tarjeta #obra-7 {
+    transform: translateX(55%) scale(0.9);
+    opacity: 0.9;
+    z-index: 8;
+}
+
+#item-6:checked ~ .otra-tarjeta #obra-8 {
+    transform: translateX(110%) scale(0.8);
+    opacity: 0.7;
+    z-index: 7;
+}
+
+#item-6:checked ~ .otra-tarjeta #obra-9 {
+    transform: translateX(165%) scale(0.7);
+    opacity: 0.5;
+    z-index: 6;
+}
+
+/* ================================================= */
+/* ITEM 7 */
+/* ================================================= */
+
+#item-7:checked ~ .otra-tarjeta #obra-1 {
+    transform: translateX(165%) scale(0.8);
+    opacity: 0.7;
+    z-index: 7;
+}
+
+#item-7:checked ~ .otra-tarjeta #obra-2 {
+    transform: translateX(220%) scale(0.7);
+    opacity: 0.5;
+    z-index: 6;
+}
+
+#item-7:checked ~ .otra-tarjeta #obra-3 {
+    transform: translateX(-220%) scale(0.6);
+    opacity: 0;
+    z-index: 5;
+}
+
+#item-7:checked ~ .otra-tarjeta #obra-4 {
+    transform: translateX(-165%) scale(0.7);
+    opacity: 0.5;
+    z-index: 6;
+}
+
+#item-7:checked ~ .otra-tarjeta #obra-5 {
+    transform: translateX(-110%) scale(0.8);
+    opacity: 0.7;
+    z-index: 7;
+}
+
+#item-7:checked ~ .otra-tarjeta #obra-6 {
+    transform: translateX(-55%) scale(0.9);
+    opacity: 0.9;
+    z-index: 8;
+}
+
+#item-7:checked ~ .otra-tarjeta #obra-7 {
+    transform: translateX(0%) scale(1);
+    opacity: 1;
+    z-index: 9;
+}
+
+#item-7:checked ~ .otra-tarjeta #obra-8 {
+    transform: translateX(55%) scale(0.9);
+    opacity: 0.9;
+    z-index: 8;
+}
+
+#item-7:checked ~ .otra-tarjeta #obra-9 {
+    transform: translateX(110%) scale(0.8);
+    opacity: 0.7;
+    z-index: 7;
+}
+
+/* ================================================= */
+/* ITEM 8 */
+/* ================================================= */
+
+#item-8:checked ~ .otra-tarjeta #obra-1 {
+    transform: translateX(110%) scale(0.9);
+    opacity: 0.9;
+    z-index: 8;
+}
+
+#item-8:checked ~ .otra-tarjeta #obra-2 {
+    transform: translateX(165%) scale(0.8);
+    opacity: 0.7;
+    z-index: 7;
+}
+
+#item-8:checked ~ .otra-tarjeta #obra-3 {
+    transform: translateX(220%) scale(0.7);
+    opacity: 0.5;
+    z-index: 6;
+}
+
+#item-8:checked ~ .otra-tarjeta #obra-4 {
+    transform: translateX(-220%) scale(0.6);
+    opacity: 0;
+    z-index: 5;
+}
+
+#item-8:checked ~ .otra-tarjeta #obra-5 {
+    transform: translateX(-165%) scale(0.7);
+    opacity: 0.5;
+    z-index: 6;
+}
+
+#item-8:checked ~ .otra-tarjeta #obra-6 {
+    transform: translateX(-110%) scale(0.8);
+    opacity: 0.7;
+    z-index: 7;
+}
+
+#item-8:checked ~ .otra-tarjeta #obra-7 {
+    transform: translateX(-55%) scale(0.9);
+    opacity: 0.9;
+    z-index: 8;
+}
+
+#item-8:checked ~ .otra-tarjeta #obra-8 {
+    transform: translateX(0%) scale(1);
+    opacity: 1;
+    z-index: 9;
+}
+
+#item-8:checked ~ .otra-tarjeta #obra-9 {
+    transform: translateX(55%) scale(0.9);
+    opacity: 0.9;
+    z-index: 8;
+}
+
+/* ================================================= */
+/* ITEM 9 */
+/* ================================================= */
+
+#item-9:checked ~ .otra-tarjeta #obra-1 {
+    transform: translateX(55%) scale(0.9);
+    opacity: 0.9;
+    z-index: 8;
+}
+
+#item-9:checked ~ .otra-tarjeta #obra-2 {
+    transform: translateX(110%) scale(0.8);
+    opacity: 0.9;
+    z-index: 7;
+}
+
+#item-9:checked ~ .otra-tarjeta #obra-3 {
+    transform: translateX(165%) scale(0.7);
+    opacity: 0.7;
+    z-index: 6;
+}
+
+#item-9:checked ~ .otra-tarjeta #obra-4 {
+    transform: translateX(220%) scale(0.6);
+    opacity: 0.5;
+    z-index: 5;
+}
+
+#item-9:checked ~ .otra-tarjeta #obra-5 {
+    transform: translateX(-220%) scale(0.6);
+    opacity: 0;
+    z-index: 5;
+}
+
+#item-9:checked ~ .otra-tarjeta #obra-6 {
+    transform: translateX(-165%) scale(0.7);
+    opacity: 0;
+    z-index: 6;
+}
+
+#item-9:checked ~ .otra-tarjeta #obra-7 {
+    transform: translateX(-110%) scale(0.8);
+    opacity: 0.5;
+    z-index: 7;
+}
+
+#item-9:checked ~ .otra-tarjeta #obra-8 {
+    transform: translateX(-55%) scale(0.9);
+    opacity: 0.9;
+    z-index: 8;
+}
+
+#item-9:checked ~ .otra-tarjeta #obra-9 {
+    transform: translateX(0%) scale(1);
+    opacity: 1;
+    z-index: 9;
+}

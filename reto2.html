@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1>Hello, world!</h1>
+
+    <!-- Boton -->
+    <button type="button" class="btn btn-primary">Primary</button>
+    <!-- -------- -->
+
+
+    <!-- Acordeon -->
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Informacion
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Resuleva sus dudas aqui:</strong> Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Veniam nostrum, iste placeat ea neque rerum, dolor magni repudiandae nobis tenetur
+                    facilis vero, illum voluptas. Repudiandae dolor natus aliquam voluptas id.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Accordion Item #2
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the
+                    collapse plugin adds the appropriate classes that we use to style each element. These classes
+                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                    modify any of this with custom CSS or overriding our default variables. It’s also worth noting that
+                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
+                    overflow.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Accordion Item #3
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the
+                    collapse plugin adds the appropriate classes that we use to style each element. These classes
+                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                    modify any of this with custom CSS or overriding our default variables. It’s also worth noting that
+                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
+                    overflow.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Accordion Item #4
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the
+                    collapse plugin adds the appropriate classes that we use to style each element. These classes
+                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                    modify any of this with custom CSS or overriding our default variables. It’s also worth noting that
+                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
+                    overflow.
+                </div>
+            </div>
+            </h2>
+        </div>
+    </div>
+    <!-- ----------------------------------------------------- -->
+
+
+    <!-- Mensaje de alerta -->
+    <div class="alert alert-danger" role="alert">
+        Este es un mensaje de alerta. Salga de este sitio!
+    </div>
+    <!-- ------------- -->
+
+
+    <!-- boton de notificacion o badges -->
+    <button type="button" class="btn btn-warning position-relative">
+        Profile
+        <span
+            class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+            <span class="visually-hidden">New alerts</span>
+        </span>
+    </button>
+    <br>
+    <br>
+    <br>
+    <!-- ------------------------------- -->
+
+
+    <!-- Grupo de botones -->
+    <div class="btn-group-vertical" role="group" aria-label="Vertical radio toggle button group">
+        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1" autocomplete="off" checked>
+        <label class="btn btn-outline-danger" for="vbtn-radio1">Radio 1</label>
+        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio2" autocomplete="off">
+        <label class="btn btn-outline-danger" for="vbtn-radio2">Radio 2</label>
+        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio3" autocomplete="off">
+        <label class="btn btn-outline-danger" for="vbtn-radio3">Radio 3</label>
+    </div>
+    <!-- --------------------- -->
+
+    <!-- Card o tarjeta -->
+    <div class="card" style="width: 18rem;">
+        <img src="./girasoles.jpeg" class="card-img-top" alt="Los Girasoles">
+        <div class="card-body">
+            <h5 class="card-title">Los Girasoles</h5>
+            <p class="card-text">Los girasoles es una serie de cuadros al óleo realizados por el pintor neerlandés
+                Vincent van Gogh. De la serie hay tres cuadros similares con catorce girasoles en un jarrón, dos con
+                doce girasoles, uno con tres y otro con cinco.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Artista: Van Gogh</li>
+            <li class="list-group-item">Precio: $50,000.00</li>
+            <li class="list-group-item">Año: 1888</li>
+        </ul>
+        <div class="card-body">
+            <a href="#" class="card-link">Mas informacion</a>
+            <a href="#" class="card-link">Comprar</a>
+        </div>
+    </div>
+    <!-- ------------------ -->
+
+    <div class="card" style="width: 18rem;">
+        <img src="./terrazaCafe.jpg" class="card-img-top" alt="Terraza de cafe por la noche">
+        <div class="card-body">
+            <h5 class="card-title">Terraza de cafe por la noche</h5>
+            <p class="card-text">Terraza de café por la noche es una pintura del neerlandés Vincent van Gogh realizada
+                en Arlés en septiembre de 1888 representando el ambiente de una terraza. En esta pintura Van Gogh
+                expresó sus nuevas impresiones de Francia meridional.</p>
+            <a href="#" class="btn btn-danger">Comprar</a>
+        </div>
+    </div>
+
+    <!-- ------------------------ -->
+
+
+
+    <!-- Carrusel -->
+    <div style="max-width: 800px; margin: 0 auto;">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./laNoche.webp" class="d-block w-100" alt="La noche estrellada">
+                </div>
+                <div class="carousel-item">
+                    <img src="./la guinguette.jpg" class="d-block w-100" alt="La Guinguinnette">
+                </div>
+                <div class="carousel-item">
+                    <img src="./descargadores.jpg" class="d-block w-100" alt="Los descargadores">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./lesVessenors.jpg" class="d-block w-100" alt="Los descargadores">
+                </div>
+                <div class="carousel-item">
+                    <img src="./girasoles.jpeg" class="d-block w-100" alt="Los descargadores">
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- ------------- -->
+
+    <!-- Menu desplegable -->
+    <div class="btn-group">
+        <button type="button" class="btn btn-success">Danger</button>
+        <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li>
+                <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+    </div>
+    <br><br><br>
+    <!-- ----------- -->
+
+    <!-- Lista de items -->
+    <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+            The current link item
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+        <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+        <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+        <a href="#" class="list-group-item list-group-item-action disabled" aria-disabled="true">A disabled link
+            item</a>
+    </div>
+    <br>
+    <br>
+    <br>
+    <ol class="list-group list-group-numbered">
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Subheading</div>
+                Content for list item
+            </div>
+            <span class="badge text-bg-primary rounded-pill">14</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Subheading</div>
+                Content for list item
+            </div>
+            <span class="badge text-bg-primary rounded-pill">14</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Subheading</div>
+                Content for list item
+            </div>
+            <span class="badge text-bg-primary rounded-pill">14</span>
+        </li>
+    </ol>
+    <br><br><br>
+    <!-- ------------------- -->
+
+    <!-- Modales o ventanillas emergentes  -->
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Terminos y condiciones
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Estas dejando nuestra galeria digital</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Si no aceptas nuestros terminos y condiciones, tendras que cerrar esta ventana
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-warning">Understood</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------------ -->
+
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+
+    <!-- JavaScript No tocar -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <!-- ------------------- -->
+</body>
+
+</html>
+
+</html>
